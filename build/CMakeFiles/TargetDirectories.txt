@@ -1,0 +1,4 @@
+/home/bobo/code/kinect2_drive/build/lib/CMakeFiles/Protonect.dir
+/home/bobo/code/kinect2_drive/build/lib/CMakeFiles/Protonect2.dir
+/home/bobo/code/kinect2_drive/build/lib/CMakeFiles/openni2_drive.dir
+/home/bobo/code/kinect2_drive/build/lib/CMakeFiles/openni2_drive2.dir

@@ -1,0 +1,1 @@
+g++       CMakeFiles/Protonect.dir/Protonect.cpp.o CMakeFiles/Protonect.dir/viewer.cpp.o CMakeFiles/Protonect.dir/flextGL.cpp.o  -o ../../bin/Protonect  -L/home/bobo/code/kinect2_drive/lib -rdynamic /usr/local/lib/libfreenect2.so -lpthread -lglfw -lGL -Wl,-rpath,/home/bobo/code/kinect2_drive/lib:/usr/local/lib 

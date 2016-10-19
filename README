@@ -1,0 +1,50 @@
+# kinect2_drive
+**Authors:** rongbohou, email:rongbohou@163.com
+
+# Prerequisites #######################################################
+## install libfreenect2: read readme
+首先git下载代码，很快下载好，放到~下面
+git clone https://github.com/OpenKinect/libfreenect2.git
+sudo apt-get install build-essential cmake pkg-config libturbojpeg libjpeg-turbo8-dev mesa-common-dev freeglut3-dev libxrandr-dev libxi-dev
+
+3、然后安装libusb。此处需要添加一个PPA，就是下面的第一行命令，不然绝逼是装不上的。
+sudo apt-add-repository ppa:floe/libusb
+sudo apt-get update
+sudo apt-get install libusb-1.0-0-dev
+
+4、接着运行下面的命令，安装GLFW3
+sudo apt-get install libglfw3-dev
+如果没有成功的话，使用下面的命令，来代替上面的
+
+cd libfreenect2/depends
+sh install_ubuntu.sh
+sudo dpkg -i libglfw3*_3.0.4-1_*.deb
+
+5、然后安装OpenCL的支持库（不打算使用GPU，这一步直接跳过没做）
+
+6、接着编译库
+cd ..
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+## install openni2:
+sudo apt-get libopenni2-*
+
+# build################################################################
+
+mkdir build ＆＆ cd build 
+cmake  .. 
+make 
+
+# Usage ##############################################################
+
+./bin/openni2_drive or
+./bin/openni2_drive2 or
+./bin/Protonect or
+./bin/Protonect2 
+to drive the kinect2 to get the rgb image and depth image
+
+##reference；
+https://github.com/occipital/OpenNI2
+http://blog.csdn.net/chenxin_130/article/details/8619909
